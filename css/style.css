@@ -1,0 +1,361 @@
+html {
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    header {
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 100%;
+        font-size: 1rem;
+        /* border: 2px solid blue; */
+        border-top: 1px solid black;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header {
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: 40% 20% 40%;
+        /* border: 2px solid greenyellow; */
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        font-size: 1rem;
+        /* border: 2px solid blue; */
+        border-top: 1px solid black;
+    }
+
+    #work {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 4;
+    }
+
+    #work div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #edu {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    #skills {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    #interests {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
+
+body {
+    font-size: 1rem;
+}
+
+
+
+header section {
+    margin: 10px;
+    /* border: 2px solid red; */
+}
+
+
+header h1 {
+    color: initial;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+header h2 {
+    color: blue;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+header p {
+    color: initial;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+/* #contacts p {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding: 1px;
+
+} */
+#photo {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+}
+
+#photo img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+#contacts img {
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+#contacts p {
+    vertical-align: middle;
+    color: initial;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    margin: 15px;
+    margin-left: 5px;
+}
+
+
+main section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+footer {
+    font-size: 1rem;
+}
+
+aside {
+    font-size: 1rem;
+}
+
+h1 {
+    color: initial;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+h2 {
+    color: initial;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+h3 {
+    color: initial;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+h4 {
+    color: initial;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+h5 {
+    color: initial;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+
+h6 {
+    color: initial;
+    font-size: 1.4rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+main section {
+    /* display: flex; */
+    /* position: sticky; */
+    /* border: 3px solid #73AD21; */
+    /* width: 75%; 
+    flex-direction: row;
+    justify-content: space-between;*/
+}
+
+
+section div {
+    /* display: flex; */
+    /* position: sticky; */
+    /* border: 3px solid #4265c5; */
+    /* width: 75%; 
+    flex-direction: row;
+    justify-content: space-between;*/
+}
+
+.work-dates {
+    color: blue;
+    font-size: 0.8rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.work-posit {
+    color: initial;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.work-compa {
+    color: blue;
+    font-size: 1.3rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+.work-descr {
+    color: initial;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.work-bulet {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.work-bulet li {
+    color: initial;
+    font-size: 1rem;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 4px;
+    margin-right: 4px;
+    list-style: circle;
+}
+
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+        font-size: 10pt;
+    }
+
+    .main-page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
