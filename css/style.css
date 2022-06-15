@@ -4,17 +4,71 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    margin: 0%;
+}
 
+nav {}
 
+nav button {
+    padding: 40px;
+    margin: 0px;
+    border: none;
+    background-color: cornflowerblue;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    transition: all 0.3s;
+    cursor: pointer;
 
+}
 
+nav button {
+    cursor: pointer;
+    position: relative;
+}
 
+nav button:after {
+    background-color: rgb(117, 159, 238);
+    transition: 0.1s;
+}
+
+nav button:hover {
+    background-color: rgb(117, 159, 238);
+    transition: 0.2s;
+}
+
+nav button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.2s;
+}
+
+nav button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 2s;
+}
+
+nav button:hover span {
+    padding-right: 25px;
+    font-size: 2rem;
+    transition: 0.5s;
+}
+
+nav button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
 header section {
     /* margin: 10px; */
     /* border: 2px solid red; */
 }
-
 
 header h1 {
     color: initial;
@@ -49,34 +103,25 @@ header p {
     margin-right: 2px;
 }
 
-
-/* #contacts p {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    padding: 1px;
-
-} */
-#photo {
+header #photo {
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-#photo img {
+header #photo img {
     max-width: 100%;
     width: auto;
     height: auto;
 }
 
-#contacts img {
+header #contacts img {
     height: 20px;
     width: 20px;
     vertical-align: middle;
 }
 
-#contacts p {
+header #contacts p {
     vertical-align: middle;
     color: initial;
     font-size: 1rem;
@@ -86,15 +131,12 @@ header p {
     margin-left: 5px;
 }
 
-
 main section {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
-
-
 
 footer {
     font-size: 1rem;
@@ -115,7 +157,6 @@ h1 {
     margin-right: 2px;
 }
 
-
 h2 {
     color: initial;
     font-size: 1.4rem;
@@ -127,7 +168,6 @@ h2 {
     margin-right: 2px;
 }
 
-
 h3 {
     color: initial;
     font-size: 1.4rem;
@@ -138,7 +178,6 @@ h3 {
     margin-left: 2px;
     margin-right: 2px;
 }
-
 
 h4 {
     color: initial;
@@ -162,7 +201,6 @@ h5 {
     margin-right: 2px;
 }
 
-
 h6 {
     color: initial;
     font-size: 1.4rem;
@@ -182,7 +220,6 @@ main section {
     flex-direction: row;
     justify-content: space-between;*/
 }
-
 
 section div {
     /* display: flex; */
@@ -257,15 +294,36 @@ section div {
     list-style: circle;
 }
 
-
-
-
-
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     html {
         font-size: 12px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin: 0px;
+        margin-bottom: 5px;
+        padding: 0px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        min-height: 40px;
+    }
+
+    nav button {
+        padding: 2px;
+        margin: 0px;
+        border: none;
+        background-color: cornflowerblue;
+        color: #FFFFFF;
+        text-align: left;
+        font-size: 14px;
+        transition: all 0.3s;
+        cursor: pointer;
+
+
     }
 
     main {
@@ -305,6 +363,22 @@ section div {
         display: grid;
         grid-template-columns: 40% 20% 40%;
         /* border: 2px solid greenyellow; */
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        margin: 0px;
+        margin-bottom: 5px;
+        padding: 0px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        min-height: 50px;
+    }
+
+    nav button {
+        padding: 10px;
     }
 
     main {
