@@ -12,6 +12,7 @@ nav {
     display: block;
     width: 100%;
     height: 50px;
+
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -102,12 +103,12 @@ nav button:hover span:after {
     right: 0;
 } */
 
-header section {
-    /* margin: 10px; */
+header.cv section {
+    margin: 10px;
     /* border: 2px solid red; */
 }
 
-header h1 {
+header.cv h1 {
     color: initial;
     font-size: 1.6rem;
     font-weight: bold;
@@ -118,7 +119,7 @@ header h1 {
     margin-right: 2px;
 }
 
-header h2 {
+header.cv h2 {
     color: blue;
     font-size: 1.3rem;
     font-weight: bold;
@@ -129,7 +130,7 @@ header h2 {
     margin-right: 2px;
 }
 
-header p {
+header.cv p {
     color: initial;
     font-size: 1rem;
     font-weight: normal;
@@ -140,25 +141,25 @@ header p {
     margin-right: 2px;
 }
 
-header #photo {
+header.cv #photo {
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
 
-header #photo img {
+header.cv #photo img {
     max-width: 100%;
     width: auto;
     height: auto;
 }
 
-header #contacts img {
+header.cv #contacts img {
     height: 20px;
     width: 20px;
     vertical-align: middle;
 }
 
-header #contacts p {
+header.cv #contacts p {
     vertical-align: middle;
     color: initial;
     font-size: 1rem;
@@ -372,34 +373,35 @@ section div {
     } */
 
 
-    header {
+    header.cv {
         display: grid;
         grid-template-areas: auto auto auto;
         grid-template-areas: auto auto auto;
+        border-bottom: 1px solid gray;
     }
 
-    header #personal {
-        grid-area: 1 / 2 / span 1 / span 2;
+    header.cv #personal {
+        grid-area: 2 / 1 / span 1 / span 3;
     }
 
     header #personal p {
         text-align: justify;
     }
 
-    header #photo {
+    header.cv #photo {
 
         grid-area: 1 / 1 / span 1 / span 1;
     }
 
-    header #contacts {
+    header.cv #contacts {
         display: flex;
         flex-direction: column;
         align-items: left;
         justify-content: center;
-        grid-area: 2 / 2 / span 1 / span 1;
+        grid-area: 1 / 2 / span 1 / span 1;
     }
 
-    header #contacts p {
+    header.cv #contacts p {
         vertical-align: middle;
         color: initial;
         font-size: 1rem;
@@ -415,11 +417,11 @@ section div {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    header {
+    header.cv {
         font-size: 1rem;
         display: grid;
         grid-template-columns: 40% 20% 40%;
-        /* border: 2px solid greenyellow; */
+        border-bottom: 1px solid gray;
     }
 
     /* nav {
@@ -526,6 +528,7 @@ body {
         font-size: 1rem;
         display: grid;
         grid-template-columns: 40% 20% 40%;
+        border-bottom: 1px solid gray;
         /* border: 2px solid greenyellow; */
     }
 
