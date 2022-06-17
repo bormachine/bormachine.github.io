@@ -48,6 +48,10 @@ nav ul li a:hover {
     transition: 0.15s;
 }
 
+nav ul li a.active {
+    color: rgb(193, 253, 115);
+}
+
 /* nav button {
     padding: 40px;
     margin: 0px;
