@@ -2,10 +2,12 @@ html {
 
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body {
     margin: 0%;
+    font-size: 1rem;
 }
 
 nav {
@@ -178,6 +180,12 @@ main section {
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    border-bottom: 1px solid gray;
+}
+
+main section div {
+    margin-bottom: 20px;
+    margin-left: 5px;
 }
 
 footer {
@@ -254,24 +262,6 @@ h6 {
     margin-right: 2px;
 }
 
-main section {
-    /* display: flex; */
-    /* position: sticky; */
-    /* border: 3px solid #73AD21; */
-    /* width: 75%; 
-    flex-direction: row;
-    justify-content: space-between;*/
-}
-
-section div {
-    /* display: flex; */
-    /* position: sticky; */
-    /* border: 3px solid #4265c5; */
-    /* width: 75%; 
-    flex-direction: row;
-    justify-content: space-between;*/
-}
-
 .work-dates {
     color: blue;
     font-size: 0.8rem;
@@ -318,10 +308,9 @@ section div {
 }
 
 .work-bulet {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    margin-left: 2px;
-    margin-right: 2px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .work-bulet li {
@@ -333,7 +322,12 @@ section div {
     margin-bottom: 1px;
     margin-left: 4px;
     margin-right: 4px;
-    list-style: circle;
+    padding-left: 1rem;
+    text-indent: -0.7rem;
+}
+
+.work-bulet li::before {
+    content: "\2234";
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -452,54 +446,27 @@ section div {
         border-top: 1px solid black;
     }
 
-    #work {
+    main section#work {
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 4;
     }
 
-    #work div {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #edu div {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #edu {
+    main section#edu {
         grid-column-start: 2;
         grid-column-end: 2;
     }
 
-    #skills {
+    main section#skills {
         grid-column-start: 2;
         grid-column-end: 2;
     }
 
-    #interests {
+    main section#interests {
         grid-column-start: 2;
         grid-column-end: 2;
     }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
-
-body {
-    font-size: 1rem;
 }
 
 @page {
@@ -514,10 +481,13 @@ body {
         width: 210mm;
         height: 297mm;
         font-size: 7pt;
-        color: blue;
     }
 
-    .main-page {
+    nav {
+        display: none;
+    }
+
+    main.cv {
         margin: 0;
         border: initial;
         border-radius: initial;
@@ -532,43 +502,40 @@ body {
         font-size: 1rem;
         display: grid;
         grid-template-columns: 40% 20% 40%;
-        border-bottom: 1px solid gray;
-        /* border: 2px solid greenyellow; */
     }
 
     main.cv {
         display: grid;
         grid-template-columns: 50% 50%;
         font-size: 1rem;
-        /* border: 2px solid blue; */
         border-top: 1px solid black;
     }
 
-    #work {
+    main section#work {
         grid-column-start: 1;
         grid-column-end: 1;
         grid-row-start: 1;
         grid-row-end: 4;
     }
 
-    #work div {
+    main section#work div {
         margin-top: 10px;
         margin-bottom: 10px;
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    #edu {
+    main section#edu {
         grid-column-start: 2;
         grid-column-end: 2;
     }
 
-    #skills {
+    main section#skills {
         grid-column-start: 2;
         grid-column-end: 2;
     }
 
-    #interests {
+    main section#interests {
         grid-column-start: 2;
         grid-column-end: 2;
     }
