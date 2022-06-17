@@ -30,6 +30,10 @@ nav ul {
 
 }
 
+nav ul li img {
+    max-height: 40px;
+}
+
 nav ul li {
     float: left;
 }
