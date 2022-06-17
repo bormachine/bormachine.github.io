@@ -8,9 +8,46 @@ body {
     margin: 0%;
 }
 
-nav {}
+nav {
+    display: block;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
 
-nav button {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: context-menu;
+    font-weight: bolder;
+}
+
+
+nav ul li a:hover {
+    color: rgb(174, 174, 255);
+    transition: 0.15s;
+}
+
+/* nav button {
     padding: 40px;
     margin: 0px;
     border: none;
@@ -63,7 +100,7 @@ nav button:hover span {
 nav button:hover span:after {
     opacity: 1;
     right: 0;
-}
+} */
 
 header section {
     /* margin: 10px; */
@@ -300,7 +337,7 @@ section div {
         font-size: 12px;
     }
 
-    nav {
+    /* nav {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         margin: 0px;
@@ -310,9 +347,9 @@ section div {
         position: sticky;
         top: 0;
         min-height: 40px;
-    }
+    } */
 
-    nav button {
+    /* nav button {
         padding: 2px;
         margin: 0px;
         border: none;
@@ -324,24 +361,45 @@ section div {
         cursor: pointer;
 
 
-    }
+    } */
 
-    main {
+    /* main {
         display: grid;
         grid-template-columns: 100%;
         font-size: 1rem;
         /* border: 2px solid blue; */
-        border-top: 1px solid black;
+    /* border-top: 1px solid black;
+    } */
+
+
+    header {
+        display: grid;
+        grid-template-areas: auto auto auto;
+        grid-template-areas: auto auto auto;
     }
 
-    #contacts {
+    header #personal {
+        grid-area: 1 / 2 / span 1 / span 2;
+    }
+
+    header #personal p {
+        text-align: justify;
+    }
+
+    header #photo {
+
+        grid-area: 1 / 1 / span 1 / span 1;
+    }
+
+    header #contacts {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: left;
         justify-content: center;
+        grid-area: 2 / 2 / span 1 / span 1;
     }
 
-    #contacts p {
+    header #contacts p {
         vertical-align: middle;
         color: initial;
         font-size: 1rem;
@@ -349,10 +407,9 @@ section div {
         font-style: normal;
         margin: auto;
         text-align: justify;
-    }
-
-    #personal p {
+        margin: 2px;
         text-align: justify;
+        margin: 2px;
     }
 }
 
@@ -365,7 +422,7 @@ section div {
         /* border: 2px solid greenyellow; */
     }
 
-    nav {
+    /* nav {
         display: grid;
         grid-template-columns: auto auto auto auto auto;
         margin: 0px;
@@ -375,11 +432,11 @@ section div {
         position: sticky;
         top: 0;
         min-height: 50px;
-    }
+    } */
 
-    nav button {
+    /* nav button {
         padding: 10px;
-    }
+    } */
 
     main {
         display: grid;
@@ -465,14 +522,14 @@ body {
         page-break-after: always;
     }
 
-    header {
+    header.cv {
         font-size: 1rem;
         display: grid;
         grid-template-columns: 40% 20% 40%;
         /* border: 2px solid greenyellow; */
     }
 
-    main {
+    main.cv {
         display: grid;
         grid-template-columns: 50% 50%;
         font-size: 1rem;
